@@ -1,0 +1,29 @@
+{
+  "name": "restfull",
+  "version": "1.0.0",
+  "description": "Teste Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fialvieira/restfull.git"
+  },
+  "keywords": [
+    "aula",
+    "teste",
+    "node.js",
+    "js",
+    "node"
+  ],
+  "author": "Filipe Alves Vieira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fialvieira/restfull/issues"
+  },
+  "homepage": "https://github.com/fialvieira/restfull#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}

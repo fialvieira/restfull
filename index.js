@@ -1,14 +1,11 @@
-const http = require('http');
+const express = require('express');
+let routesIndex = require('./routes/index');
+let routesUsers = require('./routes/users');
 
-let server = http.createServer((req, res) => {
+let app = express();
+app.use(routesIndex);
+app.use('/users', routesUsers);
 
-    console.log('URL: ', req.url);
-    console.log('Method: ', req.method);
-
-    res.end('Ok');
-
-});
-
-server.listen(3000, '127.0.0.1', ()=>{
+app.listen(3000, '127.0.0.1', () => {
     console.log('Servidor rodando!');
 });
