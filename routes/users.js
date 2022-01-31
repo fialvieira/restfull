@@ -22,8 +22,8 @@ module.exports = app => {
 
     route.post(
         [
-            check("name", "O nome é obrigatório.").notEmpty(),
-            check("email", "Email inválido.").notEmpty().isEmail(),
+            check("_name", "O nome é obrigatório.").notEmpty(),
+            check("_email", "Email inválido.").notEmpty().isEmail(),
         ],
         (req, res) => {
             if (!app.utils.validator.user(app, req, res)) {
@@ -67,8 +67,8 @@ module.exports = app => {
 
     routeId.put(
         [
-            check("name", "O nome é obrigatório.").notEmpty(),
-            check("email", "Email inválido.").notEmpty().isEmail(),
+            check("_name", "O nome é obrigatório.").notEmpty(),
+            check("_email", "Email inválido.").notEmpty().isEmail(),
         ],
         (req, res) => {
             if (!app.utils.validator.user(app, req, res)) {
